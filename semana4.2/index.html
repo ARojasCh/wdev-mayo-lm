@@ -10,7 +10,15 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .center {
+            text-align: center;
+        }
 
+        .espacio {
+            height: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,24 +36,143 @@
         </div>
         <div class="container">
             <main>
+                <div class="contenidoinfo">
+                    <div class="row">
+                        <div class="col-4">
+                            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link" href="#item-1">Informacion de la Formula 1</a>
+                                    <a class="nav-link" href="#item-2">Informacion de los autos</a>
+                                    <nav class="nav nav-pills flex-column">
+                                        <a class="nav-link ms-3 my-1" href="#item-2-1">Motor</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-2-2">Aerodinamica</a>
+                                    </nav>
+                                    <a class="nav-link" href="#item-3">Drag Reduction System</a>
+                                </nav>
+                            </nav>
+                        </div>
+
+                        <div class="col-8">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                class="scrollspy-example-2" tabindex="0">
+                                <div id="item-1">
+                                    <h4>Informacion</h4>
+                                    <p> La Formula 1 es uno de los deportes denominados como la categoria "top" del
+                                        automovilismo. Esto porque los
+                                        autos utilizados en esa categoria llegan a una velocidad de casi 370km/h o más.
+                                        Estos autos estan diseñados
+                                        de tal manera
+                                        que logran llegar a estas velocidades.<br>
+                                        En la F1 compiten 10 equipos con dos monoplazas(autos) cada uno, es decir que en
+                                        cada equipo hay 2 pilotos.
+                                        Se puede decir que hay dos torneos
+                                        dentro de la Formula 1, está el torneo de contructores que es donde compiten los
+                                        10 equipos y por otro lado
+                                        esta el torneo del campeón del mundo
+                                        que es donde compiten los 20 pilotos por ver quien es el "mejor" piloto en la
+                                        pista.</p>
+                                    <div class="imagenCampeon center">
+                                        <img src="img/worldchamp.jpg" alt="campeon del mundo" width="300">
+                                    </div>
+                                </div>
+
+                                <div id="item-2">
+                                    <h4>Autos utilizados</h4>
+                                    <p>Los automóviles de Fórmula 1 son monoplazas con cabina abierta, con alerones
+                                        delanteros y traseros y un motor situado detrás del conductor, destinado a
+                                        competir en eventos de Fórmula 1. El reglamento que rige los coches es exclusivo
+                                        del campeonato y se especifica que los coches deben ser construidos por las
+                                        propias escuderías de la competición, aunque el diseño y la fabricación pueden
+                                        ser subcontratados.</p>
+
+                                </div>
+                                <div id="item-2-1">
+                                    <h5>Motor</h5>
+                                    <p>Actualmente los F1 utilizan motores de 1.6 litros con un motor V6(turbo), el auto
+                                        con este motor llega a mas
+                                        de 370km/h como se menciono anteriormente, ellos pueden tambien llegar hasta las
+                                        15.000 revoluciones.
+                                        El F1 no puede pesar mucho pero tampoco muy poco, tienen un peso minimo de 740
+                                        kg, dentro de este entra
+                                        el peso del piloto, de hecho ellos son pesados antes y despues de la
+                                        carrera.<br>
+                                        Hace tiempos se usaban motores más grandes que llamaban mas la atención de la
+                                        gente por el sonido tan
+                                        poderoso que tenian, un ejemplo puede ser
+                                        cuando usaban V10 con blown diffuser(difusores soplados), aqui un ejemplo de
+                                        como sonaba un RedBull en la
+                                        era de los V10:</p>
+                                    <div class="videomotor center">
+                                        <iframe width="560" height="215" src="https://www.youtube.com/embed/5OnYOdEFi4s"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div id="item-2-2">
+                                    <h5>Aerodinamica en F1</h5>
+                                    <p>Si se hablase de todas las partes y regulaciones esta lista no terminaria nunca,
+                                        pero si es importante
+                                        mencionar que la aerodinamica
+                                        es algo muy importante y que influye demasiado en el rendimiento de dichos
+                                        autos. La persona encargada de
+                                        este diseño aerodinamico al
+                                        auto debe tomar en cuenta la carga aerodinamica para que el auto de cierta
+                                        manera de "pegue" al suelo al
+                                        momento de tomar las curvas, llegar a velocidades muy altas y tambien frenar de
+                                        una manera muy rápida. <br> Para todo
+                                        el flujo del aire
+                                        ayuda mucho lo que es el aleron del F1 y tambien la "nariz"(la nariz ayuda
+                                        bastante mandar aire hacia la
+                                        parte inferior del auto), de hecho
+                                        si un piloto se encuentra a menos de 1 segundo de distancia del que esta
+                                        delante, tiene la posibilidad de
+                                        activar el "DRS".</p>
+                                </div>
+                                <div id="item-3">
+                                    <h4>DRS</h4>
+                                    <p>El DRS como se mencionó anteriormente deben estar a menos de un segundo de
+                                        distancia del que esta delante y
+                                        ademas de esto
+                                        deben estar en una zona de "DRS", estas se encuentran normalmente en las rectas
+                                        largas o a veces en curvas
+                                        muy abiertas.<br><br>
+                                        El DRS se activa con un boton que se muestra en el volante del auto y además le
+                                        muestra al piloto un mensaje
+                                        diciendo que lo puede
+                                        utilizar(tambien el tecnico del piloto le avisa por radio). Cuando se activa el
+                                        DRS se "abre" una parte del
+                                        aleron y hace que el auto se "pegue" mas al suelo y asi logre ir de unos 15 a 20
+                                        km/h más rápido.</p>
+
+                                    <div class="fotos center">
+                                        DRS desactivado: <img src="img/DRSdesactivado.jpg" alt="DRS cerrado"
+                                            width="200"> DRS activado: <img src="img/DRSactivado.png" alt="DRS abierto"
+                                            width="200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="espacio"></div>
                 <div class="listaEquipos">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="true"
-                                    aria-controls="flush-collapseOne">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Equipos de la Formula 1
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body"> <!--inicio de lista de los equipos-->
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
                                     <div class="row row-cols-1 row-cols-md-2 g-4">
                                         <div class="col">
                                             <div class="card">
-                                                <a href="/MiPrimeraPaginaWeb/redbull.html"><img src="img/red-bull.jpg"
-                                                        class="card-img-top" alt="redbulllogo"></a>
+                                                <a href="redbull.html"><img src="img/red-bull.jpg" class="card-img-top"
+                                                        alt="redbulllogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">Red Bull</h5>
                                                 </div>
@@ -63,7 +190,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/aston-martin.jpg" class="card-img-top" alt="astonlogo">
+                                                <a href="astonmartin.html"><img src="img/aston-martin.jpg"
+                                                        class="card-img-top" alt="astonlogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">Aston Martin</h5>
 
@@ -72,7 +200,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/ferrari.jpg" class="card-img-top" alt="ferrarilogo">
+                                                <a href="ferrari.html"><img src="img/ferrari.jpg" class="card-img-top"
+                                                        alt="ferrarilogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">Ferrari</h5>
 
@@ -81,7 +210,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/alpine.jpg" class="card-img-top" alt="alpinelogo">
+                                                <a href="alpine.html"><img src="img/alpine.jpg" class="card-img-top"
+                                                        alt="alpinelogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">Alpine</h5>
                                                 </div>
@@ -89,7 +219,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/mclaren.jpg" class="card-img-top" alt="mclarenlogo">
+                                                <a href="mclaren.html"><img src="img/mclaren.jpg" class="card-img-top"
+                                                        alt="mclarenlogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">McLaren</h5>
                                                 </div>
@@ -97,7 +228,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/alfa-romeo.jpg" class="card-img-top" alt="alfaromeologo">
+                                                <a href="alfaromeo.html"><img src="img/alfa-romeo.jpg"
+                                                        class="card-img-top" alt="alfaromeologo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">Alfa Romeo</h5>
                                                 </div>
@@ -105,7 +237,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/haas.jpg" class="card-img-top" alt="haaslogo">
+                                                <a href="haas.html"><img src="img/haas.jpg" class="card-img-top"
+                                                        alt="haaslogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">Haas</h5>
                                                 </div>
@@ -113,7 +246,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/williams.jpg" class="card-img-top" alt="williamslogo">
+                                                <a href="williams.html"><img src="img/williams.jpg" class="card-img-top"
+                                                        alt="williamslogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">Williams</h5>
                                                 </div>
@@ -121,7 +255,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="card">
-                                                <img src="img/alphatauri.jpg" class="card-img-top" alt="alphataurilogo">
+                                                <a href="alphatauri.html"><img src="img/alphatauri.jpg"
+                                                        class="card-img-top" alt="alphataurilogo"></a>
                                                 <div class="card-body">
                                                     <h5 class="card-title">AlphaTauri</h5>
                                                 </div>
