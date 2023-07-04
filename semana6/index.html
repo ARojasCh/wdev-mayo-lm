@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calculadora</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .espacio {
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div <div class="container-fluid">
+        <div class="container">
+            <header>
+                <nav class="navbar">
+                    <div class="container">
+                        <h1 class="navbar-brand">Primera calculadora</h1>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="container">
+            <main>
+                <div class="mb-3">
+                    <label for="" class="form-label">Numero 1</label>
+                    <input type="number" class="form-control" name="numeroA" id="numeroA" aria-describedby="helpId"
+                        placeholder="Ingrese el primer numero a calcular">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Numero 2</label>
+                    <input type="text" class="form-control" name="numeroB" id="numeroB" aria-describedby="helpId"
+                        placeholder="Ingrese el segundo numero a calcular">
+                </div>
+
+                <div class="botonesCalc">
+                    <a name="botonSum" id="botonSum" class="btn btn-primary" href="#" role="button"
+                        onclick="suma()">Suma</a>
+                    <a name="botonSum" id="botonSum" class="btn btn-primary" href="#" role="button"
+                        onclick="resta()">Resta</a>
+                    <a name="botonSum" id="botonSum" class="btn btn-primary" href="#" role="button"
+                        onclick="mult()">Multiplicacion</a>
+                    <a name="botonSum" id="botonSum" class="btn btn-primary" href="#" role="button"
+                        onclick="div()">Division</a>
+                </div>
+                <div class="espacio">
+                </div>
+                <div class="numpad">
+                    <div class="row justify-content-center align-items-center g-2">
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-primary">1</button>
+                                <button type="button" class="btn btn-primary">2</button>
+                                <button type="button" class="btn btn-primary">3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center g-2">
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-primary">4</button>
+                                <button type="button" class="btn btn-primary">5</button>
+                                <button type="button" class="btn btn-primary">6</button>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center g-2">
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-primary">7</button>
+                                <button type="button" class="btn btn-primary">8</button>
+                                <button type="button" class="btn btn-primary">9</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="container">
+            <footer>
+                <!-- place footer here -->
+            </footer>
+        </div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+    </div>>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+
+    <script>
+
+        function suma() {
+            var numeroA = Number(document.getElementById("numeroA").value);
+            var numeroB = Number(document.getElementById("numeroB").value);
+            var resultado = numeroA + numeroB
+            alert("El resultado de la suma es: " + resultado)
+        }
+
+        function resta() {
+            var numeroA = Number(document.getElementById("numeroA").value);
+            var numeroB = Number(document.getElementById("numeroB").value);
+            var resultado = numeroA - numeroB
+            alert("El resultado de la resta es: " + resultado)
+        }
+
+        function mult() {
+            var numeroA = Number(document.getElementById("numeroA").value);
+            var numeroB = Number(document.getElementById("numeroB").value);
+            var resultado = numeroA * numeroB
+            alert("El resultado de la multiplicacion es: " + resultado)
+        }
+
+        function div() {
+            var numeroA = Number(document.getElementById("numeroA").value);
+            var numeroB = Number(document.getElementById("numeroB").value);
+            var resultado = numeroA / numeroB
+            alert("El resultado de la division es: " + resultado)
+        }
+    </script>
+</body>
+
+</html>
