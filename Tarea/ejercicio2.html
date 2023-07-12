@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container">
+            <p>Usted va a hacer compras por 12000 colones en un comercio
+                y el vendedor le ofrece un descuento de 1000 colones y le da la opcion de aplicar el descuento antes del
+                impuesto del 13% o aplicar el impuesto y luego el descuento</p>
+            <div class="botones">
+                <div class="boton">
+                    <p>Aplicar descuento antes de IVA</p>
+                    <a name="" id="" class="btn btn-primary" href="#" role="button"
+                        onclick="imprimirDescuento()">Descuento
+                        primero</a>
+                </div>
+                <div class="boton">
+                    <p>Descuento despues del IVA</p>
+                    <a name="" id="" class="btn btn-primary" href="#" role="button" onclick="imprimirIva()">Descuento al
+                        final</a>
+                </div>
+                <div class="boton">
+                    <p>Que es mejor?</p>
+                    <a name="" id="" class="btn btn-primary" href="#" role="button" onclick="imprimirMejor()">Que es
+                        mejor?</a>
+                </div>
+                <div>
+                    <span id="resultadoDes"></span>
+                </div>
+                <div>
+                    <span id="resultadoIVA"></span>
+                </div>
+                <div>
+                    <span id="resultadoMej"></span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script>
+        var compras = 12000;
+        var descuento = 1000;
+        var impuesto = 13 / 100;
+        function imprimirDescuento() {
+            aplicadescuento = compras - descuento;
+            impuestototal = aplicadescuento * impuesto;
+            resultadoDes = aplicadescuento + impuestototal;
+            document.getElementById("resultadoDes").innerHTML = "Usted estaria pagando: " + resultadoDes + " si aplica el descuento primero";
+        }
+        function imprimirIva() {
+            impuestototal = compras * impuesto;
+            aplicaimpuesto = compras + impuestototal;
+            resultadoiva = aplicaimpuesto - descuento;
+            document.getElementById("resultadoIVA").innerHTML = "Usted estaria pagando: " + resultadoiva + " si aplica el descuento primero";
+        }
+        function imprimirMejor(){
+            if (resultadoDes<resultadoiva) {
+                document.getElementById("resultadoMej").innerHTML = "Lo mejor seria solicitar el descuento antes"
+            }else{
+            document.getElementById("resultadoMej").innerHTML = "Lo mejor seria solicitar el descuento despues"
+        }
+        }
+
+    </script>
+</body>
+
+</html>
